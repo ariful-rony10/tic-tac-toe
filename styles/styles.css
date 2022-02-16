@@ -1,0 +1,52 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+/* Reset Defaults */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Defaults */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #004643;
+    color: #abd1c6;
+    font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fffffe;
+}
+.btn {
+    font: inherit;
+    background-color: #f9bc60;
+    color: #001e1d;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 6px;
+}
+.btn-alt {
+    font: inherit;
+    background-color: transparent;
+    color: #05ccc2;
+    border: none;
+}
+.btn:hover {
+    background-color: #fac980;
+    color: #025c59;
+}
+.btn-alt:hover {
+    background-color: #dd7e7e;
+    color: #fffffe;
+}
+/* Style */
+#main-header {
+    background-color: #abd1c6;
+    padding: 2rem 5%;
+    text-align: center;
+}
+#main-header h1 {
+    color: #001e1d;
+}
+#main-header p {
+    color: #0f3433;
+}
