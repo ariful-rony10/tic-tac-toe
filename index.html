@@ -17,7 +17,7 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-      <id id="backdrop"></id>
+      <div id="backdrop"></div>
     <header id="main-header">
       <h1>Play Tic Tac Toe!</h1>
       <p>Build with HTML, CSS & JavaScript</p>
@@ -28,10 +28,11 @@
             <form action="">
                 <div class="form-control">
                     <label for="playername">Player Name</label>
-                    <input type="text" name="playername" id="playername">
+                    <input type="text" name="playername" id="playername" required>
                 </div>
+                <p id="config-error"></p>
                 <div>
-                    <button type="submit" class="btn btn-alt">Cancel</button>
+                    <button type="reset" class="btn btn-alt" id="cancel-config-button">Cancel</button>
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </form>
