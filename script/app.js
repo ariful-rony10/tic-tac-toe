@@ -19,6 +19,8 @@ const players = [
     },
 ];
 
+// Selecting elements form the DOM
+
 const playerConfigOverlayElement = document.querySelector('#config-overlay');
 const backdropElement = document.querySelector('#backdrop');
 const formElement = document.querySelector('form');
@@ -35,12 +37,16 @@ const editPlayer2BtnElement = document.querySelector('#edit-player-2-btn');
 const cancelConfigBtnElement = document.querySelector('#cancel-config-button')
 const startGameBtnElement = document.querySelector('#start-game-btn')
 
+// EventListener
+
+// This will open edit player name form section 
 editPlayer1BtnElement.addEventListener('click', openPlayerConfig)
 editPlayer2BtnElement.addEventListener('click', openPlayerConfig)
 
+// This will close form section
 cancelConfigBtnElement.addEventListener('click', closePlayerConfig)
 backdropElement.addEventListener('click', closePlayerConfig)
-
+// Form submit button
 formElement.addEventListener('submit', savePlayerConfig)
 
 startGameBtnElement.addEventListener('click', startNewGame)
