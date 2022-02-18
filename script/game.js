@@ -17,14 +17,18 @@ function resetGameStatus() {
         }
     }
 }
-
+// Start new Game
 function startNewGame() {
+  // if player name black it will show a warning message
   if (players[0].name === "" || players[1].name === "") {
     alert("Please set player name first!");
     return;
   }
+  // Calling reset function
   resetGameStatus();
+  // changing active player name in dom
   activePlayerNameElement.textContent = players[activePlayer].name;
+  // Game display game area
   gameAreaElement.style.display = "block";
 }
 
@@ -70,10 +74,9 @@ function checkForGameOver() {
   if (currentRound === 9) {
       return -1;
   }
-
   return 0;
 }
-
+// this will change the player 
 function switchPlayer() {
   if (activePlayer === 0) {
     activePlayer = 1;
@@ -82,7 +85,7 @@ function switchPlayer() {
   }
   activePlayerNameElement.textContent = players[activePlayer].name;
 }
-
+// Gameboard select function 
 function selectGameField(event) {
     if (gameIsOver === true) {
         return;
@@ -111,7 +114,7 @@ function selectGameField(event) {
   switchPlayer();
 }
 
-// 
+// this function will end the game and display winner name
 function endGame(winnerId) {
     gameIsOver = true;
     gameOverElement.style.display = 'block'
